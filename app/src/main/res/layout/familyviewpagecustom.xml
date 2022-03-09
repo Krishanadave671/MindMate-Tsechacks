@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imageView_familyphoto"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:elevation="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/yashdalvi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="10dip"
+            app:riv_mutate_background="true"
+            app:riv_tile_mode="repeat" />
+
+    <TextView
+        android:id="@+id/textView_familyname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/baloo"
+        android:text="Yash dalvi"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_familyphoto"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="@+id/imageView_familyphoto"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_familyphoto" />
+</androidx.constraintlayout.widget.ConstraintLayout>
