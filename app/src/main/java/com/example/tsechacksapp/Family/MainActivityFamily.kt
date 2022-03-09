@@ -25,7 +25,6 @@ class MainActivityFamily : AppCompatActivity() {
     private lateinit var VideoViewTxt : TextView
     private lateinit var VideoView : VideoView
     private lateinit var ImageView: ImageView
-    private lateinit var Reload: ImageView
     private lateinit var uploadbtn : Button
     private var imageUri: Uri? = null
     private var VideoUri: Uri? = null
@@ -37,9 +36,11 @@ class MainActivityFamily : AppCompatActivity() {
         VideoViewTxt = findViewById(R.id.video_txtv)
         VideoView  = findViewById(R.id.video_view_family)
         ImageView = findViewById(R.id.image_view_family)
-        ImageViewTxt.setBackgroundColor(resources.getColor(R.color.primary))
+//        ImageViewTxt.setBackgroundColor(resources.getColor(R.color.primarylight))
+        ImageViewTxt.background = resources.getDrawable(R.drawable.roundness)
+        VideoView.background = resources.getDrawable(R.drawable.ic_add_a_video)
         uploadbtn = findViewById(R.id.upload)
-        Reload = findViewById(R.id.reload)
+
 
         ImageViewTxt.setOnClickListener {
 
@@ -49,9 +50,11 @@ class MainActivityFamily : AppCompatActivity() {
             ImageView.apply{
                 visibility = View.VISIBLE
             }
-            Reload.visibility = View.INVISIBLE
-            ImageViewTxt.setBackgroundColor(resources.getColor(R.color.primary))
-            VideoViewTxt.setBackgroundColor(resources.getColor(R.color.white))
+
+            ImageViewTxt.background = resources.getDrawable(R.drawable.roundness)
+//            ImageViewTxt.setBackgroundColor(resources.getColor(R.color.primarylight))
+            VideoViewTxt.background = resources.getDrawable(R.drawable.roundness_white)
+//            VideoViewTxt.setBackgroundColor(resources.getColor(R.color.white))
             ViewModel.setType("Image")
         }
 
@@ -62,9 +65,11 @@ class MainActivityFamily : AppCompatActivity() {
             ImageView.apply{
                 visibility = View.INVISIBLE
             }
-            Reload.visibility = View.VISIBLE
-            ImageViewTxt.setBackgroundColor(resources.getColor(R.color.white))
-            VideoViewTxt.setBackgroundColor(resources.getColor(R.color.primary))
+
+            ImageViewTxt.background = resources.getDrawable(R.drawable.roundness_white)
+//            ImageViewTxt.setBackgroundColor(resources.getColor(R.color.white))
+            VideoViewTxt.background = resources.getDrawable(R.drawable.roundness)
+//            VideoViewTxt.setBackgroundColor(resources.getColor(R.color.primarylight))
             ViewModel.setType("Video")
             if (VideoUri != null) {
                 VideoView.start()
@@ -73,9 +78,7 @@ class MainActivityFamily : AppCompatActivity() {
         }
 
         if(ViewModel.type.value=="Video"){
-            Reload.setOnClickListener {
-                VideoView.start()
-            }
+
         }
 
         uploadbtn.setOnClickListener {
