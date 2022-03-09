@@ -66,10 +66,10 @@
             android:id="@+id/linearlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:orientation="vertical"
-            android:layout_marginTop="0dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4">
 
@@ -77,8 +77,8 @@
                 android:id="@+id/viewPagerImgSlider"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="5dp"
                 android:paddingStart="80dp"
+                android:paddingTop="5dp"
                 android:paddingEnd="80dp" />
         </LinearLayout>
 
@@ -87,7 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="5sp"
-            android:layout_marginTop="20sp"
+            android:layout_marginTop="8dp"
             android:layout_marginRight="5sp"
             app:layout_constraintEnd_toEndOf="@id/linearlayout"
             app:layout_constraintHorizontal_bias="0.444"

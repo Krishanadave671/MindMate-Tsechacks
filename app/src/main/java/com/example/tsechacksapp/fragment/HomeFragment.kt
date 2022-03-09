@@ -1,6 +1,7 @@
 package com.example.tsechacksapp.fragment
 
 import android.content.Intent
+import android.icu.lang.UCharacter
 import android.os.Bundle
 import android.os.Handler
 import androidx.fragment.app.Fragment
@@ -9,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import android.widget.Toast.LENGTH_LONG
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
@@ -28,6 +30,7 @@ class HomeFragment : Fragment() {
     private lateinit var sliderHandle: Handler
     private lateinit var sliderRun :Runnable
     private lateinit var postrecyclerView: RecyclerView
+    private lateinit var linearLayoutManager: LinearLayoutManager
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -52,6 +55,10 @@ class HomeFragment : Fragment() {
         postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
         dashboardadapter = dashboardadapter(postlist,requireContext())
         postrecyclerView.adapter = dashboardadapter
+        linearLayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL,false)
+        postrecyclerView.layoutManager = linearLayoutManager
+
+
 
     }
 
