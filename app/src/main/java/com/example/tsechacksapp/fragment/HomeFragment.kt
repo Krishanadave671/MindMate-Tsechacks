@@ -1,6 +1,7 @@
 package com.example.tsechacksapp.fragment
 
 import android.content.Intent
+import android.icu.lang.UCharacter
 import android.os.Bundle
 import android.os.Handler
 import androidx.fragment.app.Fragment
@@ -9,20 +10,27 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import android.widget.Toast.LENGTH_LONG
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
 import com.example.tsechacksapp.Adapter.FamilydataAdapter
+import com.example.tsechacksapp.Adapter.dashboardadapter
 import com.example.tsechacksapp.R
 import com.example.tsechacksapp.models.FamilyData
+import com.example.tsechacksapp.models.postdata
 
 class HomeFragment : Fragment() {
     private lateinit var list : ArrayList<FamilyData>
+    private lateinit var dashboardadapter: dashboardadapter
+    private lateinit var postlist : ArrayList<postdata>
     private lateinit var familydataAdapter : FamilydataAdapter
     private lateinit var viewPagerImgSlider: ViewPager2
     private lateinit var sliderHandle: Handler
     private lateinit var sliderRun :Runnable
+    private lateinit var postrecyclerView: RecyclerView
+    private lateinit var linearLayoutManager: LinearLayoutManager
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -30,9 +38,25 @@ class HomeFragment : Fragment() {
 
         val view =  inflater.inflate(R.layout.fragment_home, container, false)
         viewPagerImgSlider = view.findViewById(R.id.viewPagerImgSlider)
+        postrecyclerView = view.findViewById(R.id.postrecyclerview)
 
         loadrecyclerfamilyphoto()
+        loadpostsrecyclerview()
         return view
+    }
+
+    private fun loadpostsrecyclerview() {
+        postlist = ArrayList()
+        postlist.add(postdata(R.drawable.grandfather,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
+        postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
+        postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
+        postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
+        postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
+        postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
+        dashboardadapter = dashboardadapter(postlist,requireContext())
+        postrecyclerView.adapter = dashboardadapter
+        linearLayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL,false)
+        postrecyclerView.layoutManager = linearLayoutManager
     }
 
     private fun loadrecyclerfamilyphoto() {
