@@ -79,9 +79,9 @@
                 android:id="@+id/viewPagerImgSlider"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="80dp"
-                android:paddingTop="5dp"
-                android:paddingEnd="80dp" />
+                android:paddingStart="2dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="10dp" />
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView

@@ -47,7 +47,7 @@ class HomeFragment : Fragment() {
 
     private fun loadpostsrecyclerview() {
         postlist = ArrayList()
-        postlist.add(postdata(R.drawable.grandfather,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
+        postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
         postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
         postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
         postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
@@ -61,11 +61,11 @@ class HomeFragment : Fragment() {
 
     private fun loadrecyclerfamilyphoto() {
         list = ArrayList()
-        list.add(FamilyData("Abhinay patil",R.drawable.yashdalvi,1))
-        list.add(FamilyData("Abhinay patil",R.drawable.yashdalvi,1))
-        list.add(FamilyData("Abhinay patil",R.drawable.yashdalvi,1))
-        list.add(FamilyData("Abhinay patil",R.drawable.yashdalvi,1))
-        list.add(FamilyData("Abhinay patil",R.drawable.yashdalvi,1))
+        list.add(FamilyData("Abhinay patil",R.drawable.grandfather,1))
+        list.add(FamilyData("Abhinay patil",R.drawable.father,1))
+        list.add(FamilyData("Abhinay patil",R.drawable.ladkason,1))
+        list.add(FamilyData("Abhinay patil",R.drawable.chachiphoto,1))
+        list.add(FamilyData("Abhinay patil",R.drawable.boy,1))
         familydataAdapter = FamilydataAdapter(viewPagerImgSlider,list, requireContext())
         viewPagerImgSlider.adapter = familydataAdapter
         viewPagerImgSlider.clipToPadding = false

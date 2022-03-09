@@ -6,19 +6,19 @@
         android:layout_height="wrap_content">
 
 
-        <com.makeramen.roundedimageview.RoundedImageView
-            android:id="@+id/imageView_familyphoto"
-            android:layout_width="0dp"
-            android:layout_height="130dp"
-            android:elevation="30dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/yashdalvi"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:riv_corner_radius="10dip"
-            app:riv_mutate_background="true"
-            app:riv_tile_mode="repeat" />
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView_familyphoto"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:elevation="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/yashdalvi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="10dip"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="repeat" />
 
     <TextView
         android:id="@+id/textView_familyname"
