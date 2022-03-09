@@ -6,9 +6,12 @@
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/drawable/avd_home.xml" value="0.1795" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/drawable/avd_medicine.xml" value="0.1" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/drawable/avd_profile.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/drawable/bottom_curved.xml" value="0.1" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/drawable/ic_baseline_done_24.xml" value="0.1795" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/drawable/ic_home.xml" value="0.1795" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/drawable/ic_profile.xml" value="0.1" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/font/archivo_narrow.xml" value="0.2203125" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/activity_add_medicine.xml" value="0.22" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/activity_main_doctor.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/activity_main_family.xml" value="0.22" />
@@ -46,6 +49,7 @@
         <entry key="app/src/main/res/layout/activity_success.xml" value="0.24094202898550723" />
         <entry key="app/src/main/res/layout/content_success_page.xml" value="0.17135416666666667" />
         <entry key="app/src/main/res/layout/doctor_item.xml" value="0.22056159420289856" />
+
       </map>
     </option>
   </component>
