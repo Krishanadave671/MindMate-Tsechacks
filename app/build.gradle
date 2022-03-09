@@ -48,9 +48,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
 
-
+    // Firebase dependencies
     implementation platform('com.google.firebase:firebase-bom:29.1.0')
     implementation 'com.google.firebase:firebase-analytics'
+
     // Circular bottom navigation
     implementation 'np.com.susanthapa:curved_bottom_navigation:0.6.5'
 
