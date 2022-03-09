@@ -17,6 +17,9 @@ import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
 import com.example.tsechacksapp.Adapter.FamilydataAdapter
 import com.example.tsechacksapp.Adapter.dashboardadapter
+import com.example.tsechacksapp.CollapsingTollbar_family
+import com.example.tsechacksapp.CollapsingtoolbarActivity
+import com.example.tsechacksapp.MainActivity
 import com.example.tsechacksapp.R
 import com.example.tsechacksapp.models.FamilyData
 import com.example.tsechacksapp.models.postdata
@@ -97,11 +100,14 @@ class HomeFragment : Fragment() {
 
         familydataAdapter.setOnItemClickListener(object : FamilydataAdapter.onItemClickListener{
             override fun onItemClick(position: Int) {
-               Toast.makeText(activity,"hi",Toast.LENGTH_SHORT).show()
-            }
-        })
+                startActivity(Intent(requireContext(),CollapsingtoolbarActivity::class.java))
+            } })
+
 
 
 
     }
+
+
+
 }
