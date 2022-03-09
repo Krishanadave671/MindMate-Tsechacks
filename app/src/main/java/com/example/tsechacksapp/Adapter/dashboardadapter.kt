@@ -29,7 +29,6 @@ class dashboardadapter(private val list : ArrayList<postdata>, private val conte
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Viewholder {
         val view = LayoutInflater.from(context)
             .inflate(R.layout.dashboardrecyclerview, parent, false)
-        view.layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
         return Viewholder(view)
 
     }

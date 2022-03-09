@@ -47,7 +47,7 @@ class HomeFragment : Fragment() {
 
     private fun loadpostsrecyclerview() {
         postlist = ArrayList()
-        postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
+        postlist.add(postdata(R.drawable.grandfather,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
         postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
         postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
         postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
@@ -57,9 +57,6 @@ class HomeFragment : Fragment() {
         postrecyclerView.adapter = dashboardadapter
         linearLayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL,false)
         postrecyclerView.layoutManager = linearLayoutManager
-
-
-
     }
 
     private fun loadrecyclerfamilyphoto() {
