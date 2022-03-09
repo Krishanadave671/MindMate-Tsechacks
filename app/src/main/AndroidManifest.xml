@@ -10,11 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tsechacksapp">
         <activity
-            android:name=".doctor.MainActivityDoctor"
+            android:name=".doctor.PatientInfo"
             android:exported="false" />
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+
+            android:name=".Family.MainActivityFamily"
+            android:exported="false"/>
+      <activity
+
+            android:name=".doctor.MainActivityDoctor"
+
+            android:exported="true"/>
+          <activity
+              android:name=".MainActivity"
+              android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
