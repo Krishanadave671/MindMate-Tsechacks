@@ -60,7 +60,7 @@
         />
 
     <Button
-        android:id="@+id/prescrtibe_medicine"
+        android:id="@+id/prescribe_medicine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Prescribe a medicine"

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tsechacksapp">
         <activity
+            android:name=".doctor.AddMedicine"
+            android:exported="false" />
+        <activity
             android:name=".doctor.PatientInfo"
             android:exported="false" />
         <activity
