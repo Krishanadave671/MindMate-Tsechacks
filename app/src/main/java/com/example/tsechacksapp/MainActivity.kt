@@ -14,6 +14,8 @@ import np.com.susanthapa.curved_bottom_navigation.CbnMenuItem
 
 class MainActivity : AppCompatActivity() {
 
+
+
     private lateinit var navHostFragment: NavHostFragment
     private lateinit var bottomNavigation: np.com.susanthapa.curved_bottom_navigation.CurvedBottomNavigationView
     private lateinit var navController: NavController
@@ -54,6 +56,7 @@ class MainActivity : AppCompatActivity() {
                 R.drawable.ic_profile -> ProfileFragment()
                 else -> HomeFragment()
             }
+
             supportFragmentManager.beginTransaction().replace(R.id.fragment_container_view,destFragment).commit()
 
         }

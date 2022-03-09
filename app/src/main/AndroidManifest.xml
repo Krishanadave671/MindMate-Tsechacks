@@ -10,19 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tsechacksapp">
         <activity
+            android:name=".CollapsingTollbar_family"
+            android:exported="false" />
+        <activity
             android:name=".doctor.PatientInfo"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-
             android:name=".Family.MainActivityFamily"
-            android:exported="false"/>
-      <activity
-
+            android:exported="false" />
+        <activity
             android:name=".doctor.MainActivityDoctor"
-
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

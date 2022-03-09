@@ -7,6 +7,8 @@ import android.widget.EditText;
 
 import com.example.tsechacksapp.R;
 
+import com.example.tsechacksapp.R;
+
 public class MainActivityDoctor extends AppCompatActivity {
 
 
