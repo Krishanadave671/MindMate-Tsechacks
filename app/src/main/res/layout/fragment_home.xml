@@ -14,7 +14,7 @@
 
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_image"
+            android:id="@+id/rolephoto"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginEnd="12dp"
@@ -30,11 +30,11 @@
             android:layout_height="0dp"
             android:background="@drawable/circleorange"
             android:padding="5dp"
-            app:layout_constraintBottom_toBottomOf="@+id/profile_image"
-            app:layout_constraintEnd_toEndOf="@id/profile_image"
+            app:layout_constraintBottom_toBottomOf="@+id/rolephoto"
+            app:layout_constraintEnd_toEndOf="@id/rolephoto"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/profile_image"
-            app:layout_constraintTop_toTopOf="@id/profile_image"
+            app:layout_constraintStart_toStartOf="@+id/rolephoto"
+            app:layout_constraintTop_toTopOf="@id/rolephoto"
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
@@ -82,7 +82,17 @@
                 android:paddingEnd="80dp" />
         </LinearLayout>
 
-
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/postrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="5sp"
+            app:layout_constraintEnd_toEndOf="@id/linearlayout"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearlayout" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
