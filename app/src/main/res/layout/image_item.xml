@@ -7,7 +7,7 @@
 
 
     <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/postimage"
+        android:id="@+id/detailPage_image"
         android:layout_width="0dp"
         android:layout_height="200dp"
 

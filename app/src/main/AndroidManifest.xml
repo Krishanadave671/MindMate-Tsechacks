@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tsechacksapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,28 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tsechacksapp">
         <activity
+            android:name=".CollapsingtoolbarActivity"
+            android:exported="false" />
+        <activity
             android:name=".CollapsingTollbar_family"
             android:exported="false" />
         <activity
             android:name=".doctor.PatientInfo"
             android:exported="false" />
-
         <activity
             android:name=".doctor.MainActivityDoctor"
-            android:exported="false"/>
-      <activity
-
-            android:name=".Family.MainActivityFamily"
-            android:exported="false"/>
-
             android:exported="false" />
-
-
-
-          <activity
-              android:name=".MainActivity"
-              android:exported="true" >
-
+        <activity
+            android:name=".Family.MainActivityFamily"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
