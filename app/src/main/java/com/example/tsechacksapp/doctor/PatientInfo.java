@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.example.tsechacksapp.R;
 
+import com.example.tsechacksapp.R;
+
 public class PatientInfo extends AppCompatActivity {
 
     @Override
