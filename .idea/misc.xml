@@ -15,6 +15,11 @@
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/fragment_medicine.xml" value="0.1" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+
+
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/medicine_info_item.xml" value="0.5" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/patient_info_item.xml" value="0.20416666666666666" />
+
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/menu/nav_header.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/menu/side_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/krish/AndroidStudioProjects/Tsechacksapp/app/src/main/res/drawable-v24/ic_baseline_star_24.xml" value="0.1" />
