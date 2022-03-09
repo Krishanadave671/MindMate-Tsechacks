@@ -13,9 +13,6 @@ import com.example.tsechacksapp.data.PatientDetail
 class PatientDetailsAdapter(private val datas: ArrayList<PatientDetail>)
     :RecyclerView.Adapter<PatientDetailsAdapter.ViewHolder>() {
 
-
-
-
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val params =itemView.findViewById<TextView>(R.id.patient_detail_list)
         val status = itemView.findViewById<ImageView>(R.id.patient_detail_status)
