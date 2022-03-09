@@ -37,7 +37,8 @@
                 android:layout_gravity="center"
                 app:civ_border_color="@color/purple_200"
                 app:layout_collapseMode="parallax"
-                app:riv_corner_radius="15dip" />
+                app:riv_corner_radius="15dip"
+                android:src="@drawable/yashdalvi"/>
 
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
