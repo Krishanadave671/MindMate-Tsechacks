@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
 
-    android:layout_height="wrap_content">
-<!--    android:layout_marginStart="5dp"-->
-<!--    android:layout_marginTop="5dp">-->
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+    <!--    android:layout_marginStart="5dp"-->
+    <!--    android:layout_marginTop="5dp">-->
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/rolephoto"
@@ -52,6 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Friend"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/familyname"
         app:layout_constraintTop_toBottomOf="@+id/familyname" />
 
@@ -126,6 +128,7 @@
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/muli_extrabold"
         android:text="Hello, I am yash dalvi An android developer , an vicechairperson of mad club 2022"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/roletext" />
