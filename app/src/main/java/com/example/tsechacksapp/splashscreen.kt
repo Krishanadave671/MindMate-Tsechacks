@@ -7,6 +7,7 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.airbnb.lottie.LottieAnimationView
 import com.example.tsechacksapp.fragment.HomeFragment
+import com.example.tsechacksapp.login.LoginActivity
 
 class splashscreen : AppCompatActivity() {
     var lottieAnimationView1: LottieAnimationView? = null
@@ -20,7 +21,7 @@ class splashscreen : AppCompatActivity() {
         lottieAnimationView1 = findViewById(R.id.lottieAnimationView1)
         lottieAnimationView2 = findViewById(R.id.lottieAnimationView2)
         Handler().postDelayed({
-            val i = Intent(this@splashscreen, MainActivity::class.java)
+            val i = Intent(this@splashscreen, LoginActivity::class.java)
             startActivity(i)
             finish()
         }, 1500)
