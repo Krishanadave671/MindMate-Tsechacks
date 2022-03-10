@@ -25,7 +25,6 @@ class PhotoDetail_Adapter(private val list : ArrayList<photoData>, private val c
 
     override fun getItemCount(): Int {
         return list.size
-
     }
 }
 

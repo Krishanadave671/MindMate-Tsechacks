@@ -98,9 +98,13 @@ class HomeFragment : Fragment() {
                 }
             })
 
+
         familydataAdapter.setOnItemClickListener(object : FamilydataAdapter.onItemClickListener{
             override fun onItemClick(position: Int) {
-                startActivity(Intent(requireContext(),CollapsingtoolbarActivity::class.java))
+
+                val intent = Intent(requireContext(), CollapsingtoolbarActivity :: class.java)
+                intent.putExtra("image",list[position].image)
+                startActivity(intent)
             } })
 
 
