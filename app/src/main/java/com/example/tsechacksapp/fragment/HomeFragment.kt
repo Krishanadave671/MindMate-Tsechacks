@@ -67,12 +67,12 @@ class HomeFragment : Fragment() {
 
     private fun loadpostsrecyclerview() {
         postlist = ArrayList()
-        postlist.add(postdata(R.drawable.friends,"Donald trump","Friend","I love playing golf i love vjdsvjsfdjsfj disd if ",R.drawable.fireboypng))
-        postlist.add(postdata(R.drawable.friends,"johns adam","Family"," ",R.drawable.yashdalvi ))
-        postlist.add(postdata(R.drawable.friends,"Elon musk","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.foresttrekingimage ))
-        postlist.add(postdata(R.drawable.friends,"chris Gayle","son"," I am a codecell core member and Air 1 in codechef",R.drawable.birthdayparty))
-        postlist.add(postdata(R.drawable.friends,"vladymyr putin ","brother"," I am a codecell core member and Air 1 in codechef",R.drawable.friends ))
-        postlist.add(postdata(R.drawable.friends,"Zelensky","baby"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
+        postlist.add(postdata(R.drawable.friends,"Donald trump","Friend","I love playing golf  ",R.drawable.fireboypng))
+        postlist.add(postdata(R.drawable.friends,"johns adam","Family","I love sleeping ",R.drawable.yashdalvi ))
+        postlist.add(postdata(R.drawable.friends,"Elon musk","Friend"," I love trekking",R.drawable.foresttrekingimage ))
+        postlist.add(postdata(R.drawable.friends,"chris Gayle","son"," My daughter birthday",R.drawable.birthdayparty))
+        postlist.add(postdata(R.drawable.friends,"vladymyr putin ","brother"," I love fighting with ukraine",R.drawable.friends ))
+        postlist.add(postdata(R.drawable.friends,"Zelensky","baby"," I love meeting with west",R.drawable.yashdalvi ))
         dashboardadapter = dashboardadapter(postlist,requireContext())
         postrecyclerView.adapter = dashboardadapter
         linearLayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL,false)
