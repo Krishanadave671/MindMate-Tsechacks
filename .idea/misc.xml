@@ -67,6 +67,10 @@
         <entry key="app/src/main/res/drawable/roundness.xml" value="0.222" />
         <entry key="app/src/main/res/drawable/roundness_white.xml" value="0.2495" />
         <entry key="app/src/main/res/layout/activity_game_main.xml" value="0.24094202898550723" />
+
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.24094202898550723" />
+
+
         <entry key="app/src/main/res/layout/activity_main_doctor.xml" value="0.22056159420289856" />
         <entry key="app/src/main/res/layout/activity_main_family.xml" value="0.22056159420289856" />
         <entry key="app/src/main/res/layout/activity_patient_info.xml" value="0.22056159420289856" />
@@ -75,8 +79,20 @@
         <entry key="app/src/main/res/layout/doctor_item.xml" value="0.22056159420289856" />
 
 
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.24094202898550723" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.24094202898550723" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.24094202898550723" />
+
+
         <entry key="app/src/main/res/layout/activity_main_doctor.xml" value="0.22056159420289856" />
         <entry key="app/src/main/res/layout/doctor_item.xml" value="0.22056159420289856" />
+
+
+
+
+        <entry key="app/src/main/res/layout/activity_main_doctor.xml" value="0.22056159420289856" />
+        <entry key="app/src/main/res/layout/doctor_item.xml" value="0.22056159420289856" />
+
       </map>
     </option>
   </component>
