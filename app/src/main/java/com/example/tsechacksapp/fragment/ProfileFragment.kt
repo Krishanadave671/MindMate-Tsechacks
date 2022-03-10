@@ -23,6 +23,7 @@ class ProfileFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_profile, container, false)
 
+
         val pulsator = view.findViewById(R.id.pulsator) as PulsatorLayout
 
         ImageViewgame = view.findViewById(R.id.pulsatingImage)
@@ -35,6 +36,7 @@ class ProfileFragment : Fragment() {
 
         pulsator.count = 50
         pulsator.duration = 100
+
 
 
         return view

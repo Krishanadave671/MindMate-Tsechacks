@@ -29,9 +29,21 @@
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/font/archivo_narrow.xml" value="0.2203125" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/activity_add_medicine.xml" value="0.22" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/activity_main_doctor.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/activity_main_family.xml" value="0.22" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/activity_main_main_doctor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/activity_patient_info.xml" value="0.17940199335548174" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/dashboardrecyclerview.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/familyviewpagecustom.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/fragment_medicine.xml" value="0.1" />
+
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/fragment_medicine_upload.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/fragment_photo_upload.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
+
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/medicine_info_item.xml" value="0.5" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/layout/patient_info_item.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/MindMate-Tsechacks/app/src/main/res/menu/nav_header.xml" value="0.20416666666666666" />
@@ -61,9 +73,16 @@
         <entry key="app/src/main/res/layout/activity_success.xml" value="0.24094202898550723" />
         <entry key="app/src/main/res/layout/content_success_page.xml" value="0.17135416666666667" />
         <entry key="app/src/main/res/layout/doctor_item.xml" value="0.22056159420289856" />
+
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.24094202898550723" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.24094202898550723" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.24094202898550723" />
+
+
+        <entry key="app/src/main/res/layout/activity_main_doctor.xml" value="0.22056159420289856" />
+        <entry key="app/src/main/res/layout/doctor_item.xml" value="0.22056159420289856" />
+
+
       </map>
     </option>
   </component>
