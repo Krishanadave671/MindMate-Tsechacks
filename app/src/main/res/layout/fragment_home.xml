@@ -20,7 +20,6 @@
             android:layout_marginEnd="12dp"
             android:padding="4dp"
             android:src="@drawable/profileimg"
-            app:layout_constraintBottom_toBottomOf="@+id/textView4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView3" />
 
@@ -51,10 +50,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
+
             android:text="Let's try today  "
             android:textColor="@color/black"
             android:textSize="28sp"
@@ -64,18 +65,38 @@
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 
+            <TextView
+                android:id="@+id/jk_que"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:text="TextView"
+                android:textColor="#E91E63"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/jk_ans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="30sp"
+                android:text="TextView"
+                android:textColor="#E91E63"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
         <LinearLayout
             android:id="@+id/linearlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="12dp"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4">
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/viewPagerImgSlider"
