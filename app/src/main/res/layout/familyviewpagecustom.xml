@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:fontFamily="@font/baloo"
+        android:fontFamily="@font/archivo_narrow"
         android:text="Yash dalvi"
         android:textAlignment="center"
         android:textColor="@color/black"

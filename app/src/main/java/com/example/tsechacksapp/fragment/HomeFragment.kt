@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 import android.widget.Toast.LENGTH_LONG
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,6 +16,11 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
+import com.android.volley.Request
+import com.android.volley.RequestQueue
+import com.android.volley.Response
+import com.android.volley.toolbox.JsonObjectRequest
+import com.android.volley.toolbox.Volley
 import com.example.tsechacksapp.Adapter.FamilydataAdapter
 import com.example.tsechacksapp.Adapter.dashboardadapter
 import com.example.tsechacksapp.CollapsingTollbar_family
@@ -23,6 +29,7 @@ import com.example.tsechacksapp.MainActivity
 import com.example.tsechacksapp.R
 import com.example.tsechacksapp.models.FamilyData
 import com.example.tsechacksapp.models.postdata
+import org.json.JSONException
 
 class HomeFragment : Fragment() {
     private lateinit var list : ArrayList<FamilyData>
@@ -34,6 +41,10 @@ class HomeFragment : Fragment() {
     private lateinit var sliderRun :Runnable
     private lateinit var postrecyclerView: RecyclerView
     private lateinit var linearLayoutManager: LinearLayoutManager
+    //for jk
+    private lateinit var ques: TextView
+    private lateinit var ans: TextView
+    private var requestQueue: RequestQueue? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -42,6 +53,12 @@ class HomeFragment : Fragment() {
         val view =  inflater.inflate(R.layout.fragment_home, container, false)
         viewPagerImgSlider = view.findViewById(R.id.viewPagerImgSlider)
         postrecyclerView = view.findViewById(R.id.postrecyclerview)
+
+        //for jk
+        ques=view.findViewById(R.id.jk_que)
+        ans=view.findViewById(R.id.jk_ans)
+        requestQueue=Volley.newRequestQueue(requireContext())
+        apiCaller()
 
         loadrecyclerfamilyphoto()
         loadpostsrecyclerview()
@@ -110,6 +127,22 @@ class HomeFragment : Fragment() {
 
 
 
+    }
+
+    private fun apiCaller(){
+        val url = "https://v2.jokeapi.dev/joke/pun"
+        val request = JsonObjectRequest(Request.Method.GET, url, null, Response.Listener {
+                response ->try {
+                    val setup= response.getString("setup")
+                val delivery = response.getString("delivery")
+                ques.append("$setup")
+                ans.append("$delivery")
+
+        } catch (e: JSONException) {
+            e.printStackTrace()
+        }
+        }, Response.ErrorListener { error -> error.printStackTrace() })
+        requestQueue?.add(request)
     }
 
 
