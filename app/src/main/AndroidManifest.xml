@@ -13,7 +13,7 @@
             android:name=".game.SuccessActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".game.GameMainActivity"
             android:exported="false" />
         <activity
             android:name=".doctor.AddMedicine"
@@ -31,7 +31,7 @@
             android:name=".doctor.MainMainDoctorActivity"
             android:exported="false" />
         <activity
-            android:name=".game.GameMainActivity"
+            android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
