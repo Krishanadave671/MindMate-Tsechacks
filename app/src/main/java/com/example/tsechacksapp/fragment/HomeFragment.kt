@@ -50,12 +50,12 @@ class HomeFragment : Fragment() {
 
     private fun loadpostsrecyclerview() {
         postlist = ArrayList()
-        postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
-        postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
-        postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
-        postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
-        postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
-        postlist.add(postdata(R.drawable.friends,"piush paul","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
+        postlist.add(postdata(R.drawable.friends,"Donald trump","Friend","I love playing golf i love vjdsvjsfdjsfj disd if ",R.drawable.fireboypng))
+        postlist.add(postdata(R.drawable.friends,"johns adam","Family"," ",R.drawable.yashdalvi ))
+        postlist.add(postdata(R.drawable.friends,"Elon musk","Friend"," I am a codecell core member and Air 1 in codechef",R.drawable.foresttrekingimage ))
+        postlist.add(postdata(R.drawable.friends,"chris Gayle","son"," I am a codecell core member and Air 1 in codechef",R.drawable.birthdayparty))
+        postlist.add(postdata(R.drawable.friends,"vladymyr putin ","brother"," I am a codecell core member and Air 1 in codechef",R.drawable.friends ))
+        postlist.add(postdata(R.drawable.friends,"Zelensky","baby"," I am a codecell core member and Air 1 in codechef",R.drawable.yashdalvi ))
         dashboardadapter = dashboardadapter(postlist,requireContext())
         postrecyclerView.adapter = dashboardadapter
         linearLayoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL,false)
@@ -64,11 +64,11 @@ class HomeFragment : Fragment() {
 
     private fun loadrecyclerfamilyphoto() {
         list = ArrayList()
-        list.add(FamilyData("Abhinay patil",R.drawable.grandfather,1))
-        list.add(FamilyData("Abhinay patil",R.drawable.father,1))
-        list.add(FamilyData("Abhinay patil",R.drawable.ladkason,1))
-        list.add(FamilyData("Abhinay patil",R.drawable.chachiphoto,1))
-        list.add(FamilyData("Abhinay patil",R.drawable.boy,1))
+        list.add(FamilyData("Abhinay patil",R.drawable.person1image,1))
+        list.add(FamilyData("adam johnes",R.drawable.person2image,1))
+        list.add(FamilyData("shane warne",R.drawable.person3image,1))
+        list.add(FamilyData("josh buttler",R.drawable.person4image,1))
+        list.add(FamilyData("GT thampi",R.drawable.person5image,1))
         familydataAdapter = FamilydataAdapter(viewPagerImgSlider,list, requireContext())
         viewPagerImgSlider.adapter = familydataAdapter
         viewPagerImgSlider.clipToPadding = false
