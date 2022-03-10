@@ -3,6 +3,7 @@
     <array name="preloaded_fonts" translatable="false">
 
         <item>@font/baloo</item>
+        <item>@font/inria_serif_light</item>
         <item>@font/muli_extrabold</item>
         <item>@font/archivo_narrow</item>
     </array>

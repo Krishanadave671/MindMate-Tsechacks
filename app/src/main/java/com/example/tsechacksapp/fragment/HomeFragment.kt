@@ -2,12 +2,14 @@ package com.example.tsechacksapp.fragment
 
 import android.content.Intent
 import android.icu.lang.UCharacter
+import android.media.Image
 import android.os.Bundle
 import android.os.Handler
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import android.widget.Toast.LENGTH_LONG
@@ -40,6 +42,7 @@ class HomeFragment : Fragment() {
     private lateinit var sliderHandle: Handler
     private lateinit var sliderRun :Runnable
     private lateinit var postrecyclerView: RecyclerView
+    private lateinit var profileimg : ImageView
     private lateinit var linearLayoutManager: LinearLayoutManager
     //for jk
     private lateinit var ques: TextView
@@ -52,6 +55,7 @@ class HomeFragment : Fragment() {
 
         val view =  inflater.inflate(R.layout.fragment_home, container, false)
         viewPagerImgSlider = view.findViewById(R.id.viewPagerImgSlider)
+        profileimg = view.findViewById(R.id.rolephoto)
         postrecyclerView = view.findViewById(R.id.postrecyclerview)
 
         //for jk

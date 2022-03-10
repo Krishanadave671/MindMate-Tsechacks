@@ -24,6 +24,7 @@ class CollapsingtoolbarActivity : AppCompatActivity() {
         image_rc = findViewById(R.id.image_rc)
         zoomimage = findViewById(R.id.d_recipe_img)
         val bundle = getIntent().extras
+
         val imageid = bundle?.getInt("Krishana")
         loadrecyclermemberdetails()
 

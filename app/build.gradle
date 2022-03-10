@@ -84,6 +84,6 @@ dependencies {
     //pulsate lib
     implementation 'pl.bclogic:pulsator4droid:1.0.3'
 
-
+    // Jitsi
 
 }
