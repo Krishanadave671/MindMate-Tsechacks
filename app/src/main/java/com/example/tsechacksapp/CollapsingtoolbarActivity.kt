@@ -16,16 +16,11 @@ class CollapsingtoolbarActivity : AppCompatActivity() {
     private lateinit var PhotoDetail_Adapter: PhotoDetail_Adapter
     private lateinit var photolist : ArrayList<photoData>
     private lateinit var image_rc: RecyclerView
-    private lateinit var zoomimage : ImageView
     private lateinit var linearLayoutManager: LinearLayoutManager
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_collapsingtoolbar)
         image_rc = findViewById(R.id.image_rc)
-        zoomimage = findViewById(R.id.d_recipe_img)
-        val bundle = getIntent().extras
-
-        val imageid = bundle?.getInt("Krishana")
         loadrecyclermemberdetails()
 
 
